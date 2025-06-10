@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dream Weaver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>The Dream Weaver</h1>
+        <p>Start a surreal dream, then choose how it evolves. What strange worlds will you uncover?</p>
+
+        <div class="input-section" id="initial-input">
+            <input type="text" id="dreamSeed" placeholder="Start your dream with a word or image (e.g., flying, deep forest, talking cat)" autocomplete="off">
+            <button id="startDreamBtn">Start Dream</button>
+        </div>
+
+        <div class="dream-display" id="dream-display">
+            <p id="currentDreamText"></p>
+        </div>
+
+        <div class="choices-section hidden" id="choices-section">
+            <h2>What do you do next?</h2>
+            <div id="dreamChoices">
+                </div>
+            <button id="restartDreamBtn" class="restart-btn">Start a New Dream</button>
+        </div>
+
+        <div id="loading" class="hidden">
+            <div class="spinner"></div>
+            <p>Weaving your dream...</p>
+        </div>
+
+        <div id="error-message" class="error-hidden">
+            <p>An error occurred. Please try again.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
